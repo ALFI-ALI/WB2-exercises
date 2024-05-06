@@ -12,3 +12,14 @@ else{
     greetings= ' good evening !';
 }
 console.log(greetings)
+//////////////////////////////////
+
+let time = new Date().getHours();
+if (time < 10) {
+    console.log('good morning');
+    
+}else if (time < 20){
+    console.log('good day');
+}else{
+    console.log('good evening');
+}

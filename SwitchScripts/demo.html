@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="DisplayMessage()">click me </button>
+    <div id="messageDiv">hi user </div>
+
+    <button onclick="DisplayMessage2()">click food </button>
+    <div id = "myfood">my food </div>
+
+    <script>   
+    function DisplayMessage() {
+    const messageDiv = document.getElementById("messageDiv"); 
+     
+      //display the innerText (innerHTML)
+      messageDiv.innerHTML = "Alfi ali";      
+   }   
+
+   function DisplayMessage2() {
+    const myfood = document.getElementById("myfood"); 
+     
+      //display the innerText (innerHTML)
+      myfood.innerHTML = "biryani";      
+   }   
+     
+     </script>
+</body>
+</html>

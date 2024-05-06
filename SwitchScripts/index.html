@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="mynumber">Number </label>
+    <input type="text" id="mynumber">
+    <button id="bntMyButton" onclick="ClickTheButton()">Click me</button>
+
+    <label for="number">Num </label>
+    <input type="text" id="number">
+    <button id="MyButton" onclick="ClickButton()">Add</button>  <!--event -->
+
+
+    <p id="result">The result</p>
+    <p id="results">The result</p>
+
+    <script>
+        function ClickTheButton()
+        {
+
+            //The text of the input will be stored in the variable myTekst and then displayed in the alert
+            let myTekst = Number(document.getElementById('mynumber').value);
+
+            //Algoritme calculation
+            let result = myTekst * 2;
+
+            //Display it in elemend
+            document.getElementById('result').innerHTML = result;
+
+        }
+        /////////////////////////////////////////////////////////////////////////
+
+        function ClickButton()
+        {
+
+            //The text of the input will be stored in the variable myTekst and then displayed in the alert
+            let myTet = Number(document.getElementById('number').value);
+
+            //Algoritme calculation
+            let results = myTet + 2;
+
+            //Display it in elemend
+            document.getElementById('results').innerHTML = results;
+
+        }
+
+    </script>
+</body>
+
+</html>
